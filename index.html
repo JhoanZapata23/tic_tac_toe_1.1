@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TicTacToe</title>
+    <!-- Seccion favicon -->
+    <link href="assets/favicon/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="assets/favicon/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="assets/favicon/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="assets/favicon/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="assets/favicon/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="assets/favicon/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="assets/favicon/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="assets/favicon/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="assets/favicon/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="assets/favicon/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
+    <link href="assets/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="assets/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="assets/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="assets/favicon/manifest.json" rel="manifest">
+    <meta content="#ffffff" name="msapplication-TileColor">
+    <meta content="assets/favicon/ms-icon-144x144.png" name="msapplication-TileImage">
+    <meta content="#ffffff" name="theme-color">
+    <!-- -- -- -- -- -- -->
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/tictactoe.css" rel="stylesheet"/>
+    <script src="js/funciones.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div id="main">
+    <h1>TicTacToe</h1>
+    <div id="tablero">
+
+
+        <section class="gamer col" id="gamer1">
+            <label for="jugador1">Jugador 1</label>
+            <input id="jugador1" name="jugador1" required type="text"/>
+            <button id="btnSaveGamer1" onclick="guardarJugador1(event)">Guardar</button>
+            <div class="rol" id="rol_gamer1"></div>
+        </section>
+
+
+        <section class="area_game col">
+            <div class="zona" id="zona1"></div>
+            <div class="zona" id="zona2"></div>
+            <div class="zona" id="zona3"></div>
+            <div class="zona" id="zona4"></div>
+            <div class="zona" id="zona5"></div>
+            <div class="zona" id="zona6"></div>
+            <div class="zona" id="zona7"></div>
+            <div class="zona" id="zona8"></div>
+            <div class="zona" id="zona9"></div>
+        </section>
+
+
+        <section class="gamer col" id="gamer2">
+            <label for="jugador2">Jugador 2</label>
+            <input id="jugador2" name="jugador2" required type="text"/>
+            <button id="btnSaveGamer2" onclick="guardarJugador2(event)">Guardar</button>
+            <div class="rol" id="rol_gamer2"></div>
+        </section>
+
+
+    </div>
+
+    <div id="timer">00:00:00</div>
+    <button id="iniciar">Iniciar</button>
+    <button class="oculto" id="reiniciar">Reiniciar</button>
+    <button id="resultado">Resultados</button>
+
+
+</div>
+
+<div id="tabla">
+    <div id="tabla_dinamica">
+        <h1>SCORE</h1>
+        <div id="cerrar">x</div>
+        <div>
+            <label for="sortByTime">Ordenar por tiempo</label>
+            <input id="sortByTime" type="checkbox"/>
+        </div>
+        <br>
+        <div id="data">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
